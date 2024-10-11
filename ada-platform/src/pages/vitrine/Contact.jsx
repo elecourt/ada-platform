@@ -31,7 +31,7 @@ const Contact = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:8081/send-email', {
+      const response = await fetch('http://213.156.132.75:8081/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

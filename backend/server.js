@@ -1,33 +1,29 @@
-// server.js
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-require('dotenv').config();  // Charger les variables d'environnement
+require('dotenv').config();
 
 const app = express();
 const port = process.env.PORT || 8081;
 
-// Middleware pour gérer les CORS et le parsing des requêtes
 app.use(cors());
 app.use(bodyParser.json());
 
-// Route pour envoyer un email
 app.post('/send-email', (req, res) => {
   const { firstName, lastName, email, message } = req.body;
 
-  // Configuration du transporteur Nodemailer (en utilisant Gmail)
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: process.env.EMAIL_USER,  // Email du fichier .env
-      pass: process.env.EMAIL_PASS,  // Mot de passe d'application Gmail
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
     },
   });
 
   const mailOptions = {
     from: email,
-    to: process.env.EMAIL_USER,  // L'adresse email de destination
+    to: process.env.EMAIL_USER,
     subject: `Message de ${firstName} ${lastName}`,
     text: `
       Nom: ${firstName} ${lastName}
@@ -36,7 +32,6 @@ app.post('/send-email', (req, res) => {
     `,
   };
 
-  // Envoi de l'email
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.log(error);
@@ -47,7 +42,6 @@ app.post('/send-email', (req, res) => {
   });
 });
 
-// Lancer le serveur
 app.listen(port, () => {
   console.log(`Serveur backend en cours d'exécution sur le port ${port}`);
 });
