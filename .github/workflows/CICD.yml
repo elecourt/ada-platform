@@ -1,0 +1,42 @@
+name: CI/CD Pipeline
+ 
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+ 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+ 
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+ 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+ 
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+ 
+    - name: Setup SSH
+      uses: webfactory/ssh-agent@v0.5.3
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+ 
+    - name: Deploy to VPS
+      run: |
+        ssh -o StrictHostKeyChecking=no ${{ secrets.USERNAME }}@${{ secrets.HOST }} << 'EOF'
+          cd /var/www/ada-platform
+          docker-compose down --remove-orphans
+          docker-compose rm -f
+          docker system prune -f
+          sudo systemctl restart docker
+          git pull origin main
+          DOCKERFILE=Dockerfile.prod docker-compose up --build -d
+        EOF
