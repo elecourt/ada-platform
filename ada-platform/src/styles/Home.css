@@ -1,0 +1,333 @@
+/* Section Hero */
+@font-face {
+    font-family: 'futura-pt-book';
+    src: url('../assets/font/futura-pt/FuturaCyrillicBook.ttf');
+  }
+
+body {
+    background-color: #FFF5EA;
+}
+
+.hero-section {
+    background-image: url('../assets/images/Header-Home.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+.hero-content {
+    width: 45%;
+}
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    color: white;
+  }
+  
+  .hero-section p {
+    font-size: 1rem;
+    font-family: 'futura-pt-book', sans-serif;
+    color: white;
+  }
+  
+  .hero-section .cta-button {
+    background-color: #F96B2B;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'futura-pt';
+    margin-top: 5vh;
+  }
+  
+  .cards-section {
+    display: flex;
+    justify-content: center;
+    margin-top: -50px; /* Chevauchement */
+  }
+  
+  .cards-section .card {
+    background-color: white;
+    padding: 1rem;
+    margin: 0 2rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 35%;
+  }
+
+  .card h3 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .cardGauche {
+    border: 3px solid #FE017C;
+    border-radius: 10px;
+  }
+
+  .cardDroite {
+    border: 3px solid #692FA0;
+    border-radius: 10px;
+  }
+
+  .cards-section button {
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'futura-pt';
+    margin-top: 1vh;
+  }
+
+  .cards-section .cardGauche button {
+    background-color: #FE017C;
+  }
+
+  .cards-section .cardDroite button {
+    background-color: #692FA0;
+  }
+
+  .card-number {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    width: 100%; /* S'assurer que le parent occupe toute la largeur disponible */
+}
+
+
+  .card-number h2{
+    color: white; /* Couleur du texte */
+    width: 40px; /* Largeur du rond */
+    height: 40px; /* Hauteur du rond */
+    border-radius: 50%; /* Arrondir pour former un cercle */
+    display: flex; /* Flexbox pour centrer le texte */
+    align-items: center; /* Centrer verticalement */
+    justify-content: center; /* Centrer horizontalement */
+  }
+
+  .cardGauche .card-number h2{
+    background-color: #FE017C; /* Couleur de fond du rond, changez comme vous le souhaitez */
+  }
+
+  .cardDroite .card-number h2{
+    background-color: #692FA0; /* Couleur de fond du rond, changez comme vous le souhaitez */
+  }
+  
+  /* Section Partenaires */
+  .partners-section {
+    text-align: center;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin: 15vh 5%;
+  }
+
+  .partners-section h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .partners-section img {
+    max-height: 7vh;
+  }
+  
+  /* Grande card avec image à gauche */
+  .feature-card-home {
+    display: flex;
+    background-color: white;
+    margin: 0 5%;
+    border: 3px solid #F96B2B;
+    border-radius: 10px;
+  }
+  
+  .feature-card-home .image img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  
+  .feature-card-home .content {
+    padding: 2rem;
+    width: 50%;
+  }
+
+  .feature-card-home .content h2{
+    font-size: 2rem;
+  }
+  
+  .mini-cards {
+    display: flex;
+    gap: 2rem;
+    margin-top: 5vh;
+  }
+  
+  .mini-card {
+    width: 50%;
+    padding: 2%;
+  }
+  
+  .feature-card-home .cta-button {
+    margin-top: 2rem;
+    background-color: #F96B2B;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'futura-pt';
+    margin-top: 5vh;
+  }
+  
+  /* Section Témoignages */
+  .testimonials-section {
+    text-align: center;
+    padding: 4rem 0;
+  }
+  
+  .testimonials {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .testimonial-card {
+    width: 30%;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial-card .author img {
+    width: 25%;
+    margin-right: 5%;
+  }
+  
+  /* Section Blog */
+  .blog-section {
+    text-align: center;
+    margin: 4rem 5%;
+  }
+  
+  .articles {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .blog-section .article-card {
+    text-align: start;
+  }
+
+  .blog-section .article-card h4 {
+    color: black;
+  }
+  
+  .blog-section .article-card {
+    width: 33%;
+    padding: 2rem;
+  }
+  
+  .see-more-button {
+    background-color: #F96B2B;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'futura-pt';
+    margin-top: 5vh;
+  }
+
+  @media (max-width: 768px) {
+    .hero-section {
+      flex-direction: column; /* Stacks hero content vertically */
+      height: auto; /* Adjusts height */
+      height: 100vh;
+    }
+  
+    .hero-content {
+      width: 80%;
+    }
+  
+    .cards-section {
+      flex-direction: column; /* Stacks cards vertically */
+      width: 100%;
+      margin: -30px auto 0 auto;
+    }
+  
+    .cards-section .card {
+      margin-bottom: 20px; /* Adds space between cards */
+      width: 80%; /* Full width on small screens */
+      margin: auto;
+      margin-bottom: 5vh;
+    }
+  
+    .partners-section {
+      flex-direction: column; /* Stacks partner logos vertically */
+      align-items: center; /* Centers logos */
+    }
+
+    .feature-card-home {
+      margin: 0;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 0 5%;
+    }
+
+    .feature-card-home .content {
+      width: 80%;
+    }
+
+    .feature-card-home .content .mini-cards {
+      display: block;
+    }
+
+    .feature-card-home .content .mini-cards .mini-card {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 5vh;
+    }
+  
+    .testimonials {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .testimonial-card {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  
+    .blog-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 0;
+    }
+
+    .blog-section .articles {
+      display: block;
+    }
+  
+    .blog-section .article-card {
+      width: 80%;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  }
+  

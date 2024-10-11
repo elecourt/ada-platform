@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'futura-pt-book';
+    src: url('../assets/font/futura-pt/FuturaCyrillicBook.ttf');
+  }
+
+.login-container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 3rem;
+  }
+  
+  .login-title {
+    text-align: center;
+    font-size: 3rem;
+    color: #F96B2B; 
+    margin-bottom: 0.5rem;
+  }
+  
+  .login-subtitle {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+
+  .login-form {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .login-form .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .login-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+  }
+  
+  .login-form input {
+    width: 95%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    font-size: 1rem;
+  }
+  
+  .login-button {
+    background-color: #F96B2B;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'futura-pt';
+    width: 100%;
+  }
+  
+  .login-button:hover {
+    background-color: #F96B2B;
+  }
+  
+  .forgot-password {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8rem;
+    margin: 1rem auto;
+    width: 50%;
+    justify-content: center;
+  }
+  
+  .forgot-password a {
+    color: #000000;
+    font-size: 0.8rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .login-container {
+      width: 100%;
+      padding: 0;
+    }
+
+    .login-subtitle {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .login-form {
+      width: 80%;
+      margin-top: 5vh;
+    }
+  
+    .forgot-password {
+      width: 80%;
+      margin-bottom: 5vh;
+    }
+  }

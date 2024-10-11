@@ -1,0 +1,130 @@
+.contact-container {
+    max-width: 1200px;
+    margin: 0 5% 7rem 5%;
+  }
+  
+  .contact-title {
+    width: 50%;
+    margin: 4rem auto 1rem auto;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .contact-description {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 7rem;
+    color: #333;
+  }
+  
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5rem;
+  }
+  
+  .contact-form-container {
+    flex: 1;
+  }
+  
+  .contact-form-container h3 {
+    font-size: 1.8rem;
+    color: #000000;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-form-container p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #000000;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    font-size: 1rem;
+  }
+  
+  .contact-form textarea {
+    height: 10rem;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-group input {
+    margin-right: 0.5rem;
+    width: 5%;
+  }
+  
+  .submit-button {
+    background-color: #F96B2B;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'futura-pt';
+    margin-top: 5vh;
+  }
+  
+  .contact-image-container {
+    flex: 1;
+    text-align: end;
+  }
+  
+  .contact-image-container img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+  
+    .contact-title {
+      width: 100%;
+    }
+  
+    .contact-description {
+      width: 90%;
+      margin-bottom: 5vh;
+    }
+
+    .contact-content {
+      display: block;
+    }
+
+    .contact-form-container {
+      margin-bottom: 5vh;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 94%;
+    }
+
+    .checkbox-group input {
+      width: 5%;
+    }
+  
+  }
+  

@@ -1,0 +1,229 @@
+/* Section 1 : Titre et texte */
+.hero-actualite {
+    margin: 15vh 5% 0 5%;
+    text-align: left;
+  }
+  
+  .hero-left h1 {
+    font-size: 3rem;
+    margin-bottom: 3vh;
+  }
+  
+  .hero-left p {
+    font-size: 1.2rem;
+  }
+  
+  /* Section 2 : Articles principaux */
+  .main-articles {
+    display: flex;
+    margin: 0 5%;
+    margin-top: 10vh;
+  }
+  
+  .main-article {
+    flex: 2;
+    margin-right: 20px;
+    padding: 20px;
+  }
+
+  .main-article h4 {
+    margin: 0;
+    color: #828282;
+    font-size: 1rem;
+    width: 10%;
+  }
+
+  .main-article h2 {
+    font-size: 2rem;
+    margin: 2vh 0 5vh 0;
+  }
+
+  .main-article a {
+    color: black;
+  }
+  
+  .main-article img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .sidebar-articles {
+    flex: 1;
+  }
+  
+  .sidebar-article {
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    gap: 5%;
+  }
+
+  .sidebar-article h2 {
+    font-size: 1.2rem;
+    margin: 0 0 2vh 0;
+  }
+
+  .sidebar-article h4 {
+    color: #828282;
+    margin: 0 0 5vh 0;
+    font-size: 0.8rem;
+  }
+
+  .sidebar-article a {
+    color: black;
+    font-size: 0.8rem;
+  }
+  
+  .sidebar-article img {
+    width: 50%;
+  }
+  
+  /* Section 3 : Tous les articles */
+  .all-articles {
+    margin: 10vh 5%;
+  }
+  
+  .all-articles h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .article-filter {
+    margin-bottom: 20px;
+  }
+  
+  .articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .article-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .article-card h2 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .article-card h4 {
+    color: #828282;
+  }
+
+  .article-card a {
+    color: black;
+  }
+
+  .article-filter {
+    display: flex; /* Utilise flexbox pour aligner les boutons horizontalement */
+    gap: 1%; /* Ajoute un espace entre les boutons */
+    margin-bottom: 5vh; /* Marge en bas pour séparer des articles */
+  }
+  
+  .filter-button {
+    background-color: #FFF5EA;
+    color: black;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'futura-pt';
+    margin-top: 5vh;
+  }
+  
+  .filter-button:hover {
+    background-color: #F96B2B; /* Couleur de fond au survol */
+    color: white;
+  }
+  
+  .filter-button.active {
+    background-color: #FFF5EA; /* Couleur de fond du bouton actif */
+    color: black; /* Couleur du texte du bouton actif */
+    border: 1px solid #F96B2B;
+  }
+
+  .article-filter-dropdown {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .hero-actualite {
+      display: flex;
+      flex-direction: column; /* Stack items */
+      text-align: center; /* Center align text */
+    }
+
+    .hero-left {
+      width: 100%;
+    }
+  
+  /* Responsive main-articles section */
+    .main-articles {
+      display: block; /* Stack the elements */
+      padding: 20px;
+    }
+  
+    .main-article,
+    .sidebar-articles {
+      width: 100%; /* Full width for both main and sidebar articles */
+    }
+  
+    .sidebar-articles {
+      display: flex;
+      flex-direction: column; /* Stack sidebar articles vertically */
+      gap: 20px; /* Space between sidebar articles */
+    }
+  
+    .sidebar-article {
+      display: flex;
+      flex-direction: column; /* Stack image and text */
+    }
+  
+    .sidebar-article img {
+      width: 100%;
+    }
+  
+  /* Responsive all-articles section */
+    .article-filter {
+      display: flex;
+      flex-wrap: wrap; /* Allow filters to wrap */
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .articles-grid {
+      display: grid;
+      grid-template-columns: 1fr; /* Single column on small screens */
+      gap: 20px; /* Space between articles */
+    }
+  
+    .article-card {
+      width: 80%;
+      margin: 5vh auto;
+    }
+
+    /* Hide button filter on small screens */
+    .article-filter-buttons {
+      display: none;
+    }
+  
+    /* Show dropdown filter on small screens */
+    .article-filter-dropdown {
+      display: block;
+      text-align: start;
+      margin: 20px 0;
+    }
+  
+    /* Styling for dropdown */
+    .filter-dropdown {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%; /* Full width for small screens */
+    }
+  }

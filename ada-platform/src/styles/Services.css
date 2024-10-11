@@ -1,0 +1,257 @@
+/* Section 1 : Titre, texte, bouton, image */
+.hero-services {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10vh 5%;
+    gap: 5rem;
+  }
+  
+  .hero-left {
+    width: 50%;
+  }
+  
+  .hero-left h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .hero-left p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-services .hero-left .cta-button {
+    background-color: #F96B2B;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'futura-pt';
+    margin-top: 5vh;
+  }
+  
+  .hero-right img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Section 2 : Services listés */
+  .services-list {
+    margin: 0 5%;
+  }
+  
+  .services-list h2 {
+    text-align: center;
+    margin-bottom: 5vh;
+    font-size: 2rem;
+  }
+  
+  .services-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .second-row {
+    margin-top: 20px;
+    justify-content: center; /* Aligne les 2 services au centre */
+  }
+  
+  .service-card {
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+  }
+  
+  .service-card img {
+    width: 50px;
+  }
+  
+  .center-button {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .center-button .cta-button {
+    background-color: #F96B2B;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'futura-pt';
+    margin: 5vh 0;
+  }
+  
+  /* Section 3 : Avis clients */
+  .testimonials-section {
+    margin: 0 5%;
+  }
+
+  .testimonials-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10vh;
+  }
+
+  .testimonials {
+    gap: 3rem;
+  }
+
+  .testimonial-card {
+    border-radius: 10px;
+    border: 3px solid #F96B2B;
+  }
+
+  .testimonial-card .author {
+    display: flex;
+    font-size: 0.8rem;
+    text-align: start;
+    align-items: center;
+    margin-top: 5vh;
+  }
+
+  .testimonial-card .author h4 {
+    margin: 0;
+  }
+
+  .testimonial-card .author p {
+    margin: 0;
+  }
+  
+  /* Section 4 : Grande card */
+  .feature-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20vh 5% 0 5%;
+    gap: 5rem;
+  }
+  
+  .feature-card .content {
+    width: 50%;
+  }
+
+  .feature-card .content h2 {
+    font-size: 2rem;
+  }
+
+  .feature-card .content .cta-button {
+    background-color: #F96B2B;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'futura-pt';
+    margin-top: 5vh;
+  }
+  
+  .feature-card .image img {
+    width: 100%;
+  }
+  
+  /* Section 5 : Services supplémentaires */
+  .additional-services {
+    margin: 0 5%;
+    margin-top: 25vh;
+  }
+
+  .additional-services .services-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .additional-services .services-grid .service-card {
+    text-align: start;
+  }
+
+  .additional-services .services-grid .service-card img{
+    width: 100%;
+  }
+  
+  /* Section 6 : FAQ (Réutilise le même style que pour les tarifs) */
+  
+  .faq-item {
+    cursor: pointer;
+  }
+
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .faq-answer.active {
+    max-height: 200px;
+    transition: max-height 0.3s ease-in;
+  }
+
+  @media (max-width: 768px) {
+    .hero-services {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .hero-left {
+      width: 80%;
+    }
+  
+    .hero-right {
+      margin-top: 20px;
+    }
+  
+    .services-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service-card {
+      width: 100%;
+    }
+  
+    .testimonials {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .testimonial-card {
+      width: 80%;
+      margin-bottom: 3vh;
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .feature-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .cta-button {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
+  

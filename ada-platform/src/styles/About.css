@@ -1,0 +1,211 @@
+@font-face {
+  font-family: 'futura-pt-book';
+  src: url('../assets/font/futura-pt/FuturaCyrillicBook.ttf');
+}
+
+/* Section 1 : Titre et texte à gauche, image à droite */
+.about-intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 5%;
+    gap: 5rem;
+  }
+  
+  .about-text {
+    width: 60%;
+    padding-right: 20px;
+  }
+  
+  .about-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .about-image {
+    width: 45%;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Section 2 : Partenaires (même que la Home) */
+  .partners-section {
+    text-align: center;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin: 15vh 5%;
+  }
+
+  .partners-section h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .partners-section img {
+    max-height: 7vh;
+  }
+  
+  /* Section 3 : Texte centré avec bouton */
+  .centered-text-section {
+    padding: 40px 20px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .centered-text-section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-family: 'futura-pt-book', sans-serif;
+    text-align: start;
+  }
+
+  .centered-text-section #comptaOrange{
+    color: #F96B2B;
+  }
+
+  .centered-text-section #adminBleu{
+    color: #4DBDCE;
+  }
+
+  .centered-text-section #commJaune{
+    color: #F9C90A;
+  }
+  
+  .centered-text-section .cta-button {
+    background-color: #F96B2B;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'futura-pt';
+    margin: 0 auto;
+  }
+  
+  .centered-text-section .cta-button:hover {
+    background-color: #ff5722;
+  }
+  
+  /* Section 4 : Chiffres Clé */
+  .key-numbers-section {
+    padding: 40px 20px;
+    text-align: center;
+    margin: 0 5%;
+  }
+  
+  .key-numbers-section h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    text-align: start;
+  }
+  
+  .key-numbers {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .key-number-card {
+    text-align: start;
+    display: flex;
+    width: 33%;
+  }
+  
+  .key-number-card .vertical-bar {
+    width: 2px;
+    background-color: #000000;
+    margin-right: 10%;
+  }
+  
+  .key-number-card h3 {
+    margin-top: 0;
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .key-number-card p {
+    font-size: 1rem;
+    color: #000000;
+  }
+  
+  .key-numbers-section .cta-button {
+    background-color: #F96B2B;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'futura-pt';
+    margin: 10vh auto 5vh auto;
+  }
+  
+  .key-numbers-section .cta-button:hover {
+    background-color: #ff5722;
+  }
+
+@media only screen and (max-width: 768px) {
+  /* Section 1 : Titre et Texte à gauche, Image à droite */
+  .about-intro-section {
+    flex-direction: column; /* Les éléments s'empilent */
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-text, .about-image {
+    width: 100%;
+  }
+
+  .about-image img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .partners-section {
+    display: block;
+    margin: 0;
+  }
+
+  .partners-section img {
+    width: 20%; /* Chaque logo de partenaire occupe plus de largeur */
+    margin: 10px 5%; /* Centrer les logos */
+  }
+
+  .centered-text-section {
+    width: 90%;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .centered-text-section p {
+    line-height: 1.6;
+  }
+
+  .key-numbers {
+    flex-direction: column; /* Les chiffres clés s'empilent */
+  }
+
+  .key-number-card {
+    width: 100%; /* Chaque carte prend la largeur complète */
+    margin: 10px 0;
+  }
+
+
+}
+
+  

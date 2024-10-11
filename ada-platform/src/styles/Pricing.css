@@ -1,0 +1,229 @@
+/* Section 1 : Titre et Petit Texte Centré */
+.pricing-intro-section {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 0 auto;
+    width: 55%;
+  }
+  
+  .pricing-intro-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .pricing-intro-section p {
+    font-size: 1rem;
+  }
+  
+  /* Section 2 : Cards */
+  .pricing-cards-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    margin: 0 5%;
+    gap: 2rem;
+  }
+  
+  .pricing-card {
+    width: 30%;
+    text-align: start;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .pricing-cards-section .design {
+    border: 2px solid #F96B2B;
+  }
+
+  .pricing-cards-section .communication {
+    border: 2px solid #F9C90A;
+  }
+
+  .pricing-cards-section .complet {
+    border: 2px solid #4DBDCE;
+  }
+  
+  .pricing-card img {
+    width: 50px;
+    height: auto;
+  }
+  
+  .pricing-card h3 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+  
+  /* Section 3 : Slider */
+  .pricing-slider-section {
+    padding: 40px 20px;
+    margin: 0 5%;
+  }
+  
+  .slider-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .slider-buttons {
+    display: flex;
+    background-color: #fff;
+  }
+  
+  .slider-buttons button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    font-family: 'futura-pt';
+  }
+  
+  .slider-buttons button.active {
+    background-color: #F96B2B;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'futura-pt';
+  }
+  
+  /* Cards pour chaque plan */
+  .pricing-plans {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+  
+  .pricing-plan-card {
+    width: 30%;
+    text-align: start;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .forfait-design {
+    border: 2px solid #F96B2B;
+  }
+
+  .forfait-communication {
+    border: 2px solid #F9C90A;
+  }
+
+  .forfait-full {
+    border: 2px solid #4DBDCE;
+  }
+  
+  .pricing-plan-card .price {
+    font-size: 1rem;
+  }
+  
+  .pricing-plan-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .pricing-plan-card ul li {
+    margin-bottom: 10px;
+  }
+  
+  .pricing-plan-card hr {
+    margin: 20px 0;
+  }
+  
+  /* Section 4 : FAQ */
+  .faq-section {
+    padding: 40px 20px;
+    margin: 0 5%;
+  }
+  
+  .faq-section h2 {
+    text-align: start;
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .faq {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .faq-item {
+    margin-bottom: 10px;
+  }
+  
+  .faq-question {
+    background-color: #fff;
+    padding: 15px;
+    border: 2px solid #F96B2B;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    padding: 0 15px;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .faq-item.active .faq-answer {
+    max-height: 200px; /* Ajuste selon la longueur de ton texte */
+  }
+  
+  .faq-item h4 {
+    margin: 0;
+  }
+  
+  /* Animation des réponses */
+  .faq-answer.open {
+    max-height: 1000px; /* Ajuste cette valeur en fonction de la longueur maximale du texte */
+  }
+
+  @media (max-width: 768px) {
+    .pricing-intro-section {
+      width: 90%;
+    }
+
+    .pricing-cards-section {
+      flex-direction: column; /* Alignement vertical */
+      align-items: center; /* Centrer les cartes */
+    }
+  
+    .pricing-card {
+      width: 90%; /* Prendre 90% de la largeur de l'écran */
+      margin-bottom: 20px; /* Espacement entre les cartes */
+    }
+  
+  
+    .slider-controls {
+      flex-direction: column; /* Aligner les boutons verticalement */
+      align-items: center; /* Centrer les boutons */
+    }
+  
+    .slider-buttons button {
+      width: 100%; /* Prendre 100% de la largeur des boutons */
+      margin: 5px 0; /* Espacement entre les boutons */
+    }
+
+    .pricing-plans {
+      display: block;
+    }
+
+    .pricing-plan-card {
+      width: 85%;
+      margin: 0;
+      margin-bottom: 5vh;
+    }
+  }
+  
+  
